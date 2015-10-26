@@ -1,0 +1,12 @@
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "base";
+@import "interface";
+
+@import "modules/backgrounds";
+@import "modules/media";
+@import "modules/tables";
+@import "modules/navigation";
+
+// _mixin 'underscore' uses to not process those files separately, they'll be imported to style.scss file

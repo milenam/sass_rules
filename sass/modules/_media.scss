@@ -1,0 +1,47 @@
+$color-item-border: $red;
+$color-media-head:  $blue;
+
+.media {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .item {  // the whole thing is the normal style for an item
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-top: 1px dotted $color-item-border;
+    &:hover {
+      background: $yellow;
+    }
+    &:last-of-type {
+      border-bottom: 1px dotted $color-item-border;
+    }
+    @include clearfix;
+  }
+
+  .head {
+    margin: 0;
+    padding: 0;
+    color: $color-media-head;
+    font-size: 2rem;
+    #typography & { // & head in this case is sitting inside #typography
+      color: $red;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-main;
+  }
+}
